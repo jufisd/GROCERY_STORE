@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #ff6347;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+main {
+  padding: 1rem;
+}
+
+#cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  flex-basis: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart-item h3 {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.cart-item p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.cart-item button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #e67e22;
+}
+
+#cart-total {
+  text-align: right;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#checkout-btn {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #e67e22;
+}
+
+#checkout-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#order-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+#orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-item h3 {
+  margin-top: 0;
+}
+
+.order-item p {
+  margin: 0.5rem 0;
+}
+
+.order-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-item li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}

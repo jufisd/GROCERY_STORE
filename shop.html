@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store App - Shop</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <header>
+    <h1>Grocery Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="order.html">Orders</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="shop-section">
+    <h2>Shop for Groceries</h2>
+    <div>
+      <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+    <div id="product-list"></div>
+  </section>
+  <main>
+    <section id="shop-section">
+      <h2>Shop for Groceries</h2>
+      <div id="product-list"></div>
+    </section>
+    <section id="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">
+        <p>Total: ₹<span id="total-price">0</span></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Grocery Store App</p>
+  </footer>
+  <script src="shop.js"></script>
+</body>
+</html>

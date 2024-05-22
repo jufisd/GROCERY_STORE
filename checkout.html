@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store App - Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-********" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <h1>Grocery Store App</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html" class="active">Checkout</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+  <main>
+    <section id="checkout-section">
+      <h2>Checkout</h2>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="pincode">Pincode:</label>
+          <input type="text" id="pincode" required>
+        </div>
+        <div class="form-group">
+          <h3>Payment Options</h3>
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="cash" checked> Cash on Delivery
+            </label>
+            <label>
+              <input type="radio" name="payment" value="netbanking"> Net Banking
+            </label>
+            <label>
+              <input type="radio" name="payment" value="debitcard"> Debit Card
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="bank-details" style="display: none;">
+          <label for="bank-name">Bank Name:</label>
+          <input type="text" id="bank-name">
+          <label for="account-number">Account Number:</label>
+          <input type="text" id="account-number">
+        </div>
+        <button type="submit" id="place-order-btn">Place Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Grocery Store App</p>
+  </footer>
+  <script src="checkout.js"></script>
+</body>
+</html>
